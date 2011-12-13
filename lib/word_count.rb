@@ -1,5 +1,5 @@
-class WordCounter
-  def count(sentences)
+class WordCount
+  def self.count(sentences)
     frequency_table = {}
     
     sentences.each_with_index do |sentence, i|
