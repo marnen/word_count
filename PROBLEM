@@ -1,0 +1,25 @@
+Write a program which counts the frequency of a words in a corpus of text as well as the sentence
+numbers in which they appear, outputted sorted by most frequently occurring.
+
+Example:
+
+Input:
+
+Meet Jon. Jon is a computer programmer and lives in Connecticut. Jon is tall.
+
+Output:
+
+jon, 3, [1, 2, 3]
+
+is, 2, [2, 3]
+
+meet, 1, [1]
+
+a, 1, [2]
+
+computer, 1, [2]
+
+...
+
+You can write in any language of your choosing. Your code should be runnable. Please provide an
+example of how to execute it (e.g., ./word_count.py input.txt)
