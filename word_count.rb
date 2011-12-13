@@ -2,6 +2,6 @@
 
 class WordCount
   def self.count(string)
-    string.downcase.split.uniq
+    string.downcase.split(%r{\W+}).uniq
   end
 end
