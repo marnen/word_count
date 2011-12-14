@@ -4,7 +4,7 @@ class WordCounter
   end
   
   def sorted_table
-    count
+    count.to_a.sort_by! {|row| -row[1].count }
   end
   
   private
