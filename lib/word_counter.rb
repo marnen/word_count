@@ -1,4 +1,4 @@
-class WordCount
+class WordCounter
   def self.count(sentences)
     frequency_table = {}
     
