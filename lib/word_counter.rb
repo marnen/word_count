@@ -3,6 +3,12 @@ class WordCounter
     @sentences = sentences
   end
   
+  def sorted_table
+    count
+  end
+  
+  private
+  
   def count
     frequency_table = {}
     
