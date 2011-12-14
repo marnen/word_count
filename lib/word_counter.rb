@@ -4,7 +4,7 @@ class WordCounter
   end
   
   def sorted_table
-    count.to_a.sort_by! {|row| -row[1].count }
+    count.to_a.sort_by! {|row| -row[1].count }.collect {|row| {:word => row[0], :sentences => row[1]}}
   end
   
   private
