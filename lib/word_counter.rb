@@ -1,8 +1,12 @@
 class WordCounter
-  def self.count(sentences)
+  def initialize(sentences)
+    @sentences = sentences
+  end
+  
+  def count
     frequency_table = {}
     
-    sentences.each_with_index do |sentence, i|
+    @sentences.each_with_index do |sentence, i|
       words = sentence.downcase.split(%r{\W+})
       words.each do |word|
         unless word =~ %r{\A\s*\Z}

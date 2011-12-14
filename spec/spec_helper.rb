@@ -1,1 +1,1 @@
-require File.join File.dirname(__FILE__), '..', 'word_count'
+Dir["#{File.dirname(__FILE__)}/../lib/**/*.rb"].each {|file| require file }
